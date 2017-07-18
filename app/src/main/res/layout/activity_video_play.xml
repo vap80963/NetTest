@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tin.chigua.video.PlayVideoActivity"
+    >
+
+    <SurfaceView
+        android:id="@+id/activity_video_play_surfv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ProgressBar
+        android:id="@+id/activity_video_play_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88000000"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/activity_video_play_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="OnClick"
+            android:text="暂停" />
+
+        <Button
+            android:id="@+id/activity_video_play_replay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/activity_video_play_play"
+            android:onClick="OnClick"
+            android:text="重播" />
+
+        <Button
+            android:id="@+id/activity_video_play_screenShot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/activity_video_play_replay"
+            android:onClick="OnClick"
+            android:text="截图" />
+
+        <Button
+            android:id="@+id/activity_video_play_changeVedioSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/activity_video_play_screenShot"
+            android:onClick="OnClick"
+            android:text="全屏" >
+        </Button>
+
+        <TextView
+            android:id="@+id/activity_video_play_showTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="#ffffff" />
+
+        <SeekBar
+            android:id="@+id/activity_video_play_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/activity_video_play_showTime"
+            android:onClick="OnClick"
+            android:layout_toRightOf="@id/activity_video_play_changeVedioSize"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/ac_main_start_tcp_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/start_tcpsocket"
+        android:onClick="onClick"
+        />
+
+    <Button
+        android:id="@+id/ac_main_start_download_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/start_download"
+        android:onClick="onClick"
+        />
+
+    <Button
+        android:id="@+id/ac_main_start_service_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/start_service"
+        android:onClick="onClick"
+        />
+
+    <Button
+        android:id="@+id/ac_main_start_video_play_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/video_play"
+        android:onClick="onClick"
+        />
+
+</LinearLayout>
