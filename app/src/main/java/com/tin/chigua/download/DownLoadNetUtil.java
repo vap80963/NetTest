@@ -13,6 +13,9 @@ import java.net.URL;
 
 public class DownLoadNetUtil {
 
+    private static final String TAG = "DownLoadNetUtil";
+    private static final String TAGS = "DownLoadNetUtil";
+
     private static final String REQUEST_POST = "POST";
     private static final int CONNECT_TIME_OUT = 15000;
     private static final int READ_TIME_OUT = 3000;
